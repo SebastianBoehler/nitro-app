@@ -3,4 +3,5 @@ export default defineNitroConfig({
   experimental: {
     openAPI: true,
   },
+  preset: "vercel",
 });
