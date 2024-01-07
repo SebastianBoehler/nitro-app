@@ -1,11 +1,14 @@
 openapi: 3.0.0
 info:
-  title: Event API
+  title: Private data processing API
   version: 1.0.0
+servers:
+  - url: https://nitro-app-nine.vercel.app/
 paths:
-  /event:
+  /:
     post:
-      summary: Event handler
+      summary: Takes in a string and appends some text to it
+      operartionId: customOperationId
       requestBody:
         required: true
         content:
@@ -16,7 +19,7 @@ paths:
                 data:
                   type: string
       responses:
-        '200':
+        "200":
           description: Successful operation
           content:
             application/json:

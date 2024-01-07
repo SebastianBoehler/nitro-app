@@ -1,4 +1,4 @@
 export default eventHandler((event) => {
-  const { data } = event.context.params;
+  const { data } = event.context.body;
   return { nitro: `${data} is awesome` };
 });
